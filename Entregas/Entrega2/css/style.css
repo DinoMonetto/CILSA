@@ -1,0 +1,131 @@
+/* Estilos generales para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif; /* Fuente principal */
+    display: flex; /* Usar flexbox para centrar */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Altura completa de la ventana */
+    background-color: #f0f0f0; /* Color de fondo por defecto */
+}
+
+/* Estilos para el contenedor del formulario */
+.form-container {
+    background-color: #fff; /* Fondo blanco por defecto */
+    padding: 20px; /* Relleno interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 300px; /* Ancho fijo */
+}
+
+/* Estilos para el encabezado dentro del contenedor del formulario */
+.form-container h2 {
+    text-align: center; /* Centrar texto */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilos para cada div de clase 'form' */
+.form {
+    margin-bottom: 15px; /* Espacio inferior */
+}
+
+/* Estilos para las etiquetas dentro del formulario */
+.form label {
+    display: block; /* Mostrar como bloque */
+    margin-bottom: 5px; /* Espacio inferior */
+}
+
+/* Estilos para los campos de entrada dentro del formulario */
+.form input {
+    width: 100%; /* Ancho completo */
+    padding: 8px; /* Relleno interno */
+    box-sizing: border-box; /* Incluir relleno y borde en el tamaño total */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilos generales para los botones */
+.button {
+    margin-bottom: 15px; /* Espacio inferior */
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Relleno interno */
+    background-color: #007bff; /* Fondo azul */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano al pasar */
+    text-align: center; /* Centrar texto */
+}
+
+/* Estilos para los botones al pasar el cursor */
+.button:hover {
+    background-color: #0056b3; /* Fondo azul más oscuro */
+}
+
+/* Contenedor de los botones para cambiar estilo */
+.button-group {
+    display: flex; /* Usar flexbox */
+    justify-content: space-between; /* Espacio entre botones */
+}
+
+/* Estilos específicos para los botones dentro del grupo */
+.button-group button {
+    width: 32%; /* Ancho del 32% del contenedor */
+    padding: 10px; /* Relleno interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano al pasar */
+}
+
+/* Estilos para los botones del grupo al pasar el cursor */
+.button-group button:hover {
+    opacity: 0.8; /* Reducir opacidad */
+}
+
+/* Estilos para el modo oscuro */
+.dark-mode {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+}
+
+.dark-mode input {
+    background-color: #555; /* Fondo oscuro para campos */
+    border-color: #777; /* Borde gris oscuro */
+    color: #fff; /* Texto blanco */
+}
+
+.dark-mode button {
+    background-color: #555; /* Fondo oscuro para botones */
+}
+
+.dark-mode button:hover {
+    background-color: #777; /* Fondo más claro al pasar */
+}
+
+/* Estilos para el modo color violeta */
+.violet-mode {
+    background-color: #8a2be2; /* Fondo violeta */
+    color: #fff; /* Texto blanco */
+}
+
+.violet-mode input {
+    background-color: #a064e1; /* Fondo violeta claro para campos */
+    border-color: #c4a3f3; /* Borde violeta claro */
+    color: #fff; /* Texto blanco */
+}
+
+.violet-mode button {
+    background-color: #5c1c9c; /* Fondo violeta oscuro para botones */
+}
+
+.violet-mode button:hover {
+    background-color: #7b3fc1; /* Fondo más claro al pasar */
+}
+
+/* Ajustar el fondo del body según el modo */
+body.dark-mode {
+    background-color: #333; /* Fondo oscuro */
+}
+
+body.violet-mode {
+    background-color: #8a2be2; /* Fondo violeta */
+}
