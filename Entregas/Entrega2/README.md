@@ -179,6 +179,5 @@ Este documento proporciona de forma detallada el proceso de pruebas manuales rea
 
 ## Conclusión
 
-Después de realizar las pruebas manuales, el formulario cumple con los requisitos de validación para cada campo y es accesible mediante el lector de pantalla NVDA, garantizando así una buena experiencia para todos los usuarios, incluidos aquellos con discapacidades visuales.
-
+Después de realizar las pruebas manuales, el formulario cumple con los requisitos de validación para cada campo y es accesible mediante el lector de pantalla NVDA, garantizando así una buena experiencia para todos los usuarios.
 Tambien se realizaron las pruebas manuales para verificar la funcionalidad y accesibilidad del formulario, así como la correcta aplicación de los diferentes estilos. Los resultados observados coinciden con los resultados esperados, lo que indica que el formulario cumple con los criterios de usabilidad y accesibilidad establecidos.
