@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Este documento detalla el proceso de pruebas manuales realizado sobre el formulario de la tarea 1. Se describen los pasos necesarios para cargar el formulario, se indican los valores válidos e inválidos para cada campo, y se verifica la accesibilidad del formulario utilizando el lector de pantalla NVDA.
+Este documento proporciona de forma detallada el proceso de pruebas manuales realizado sobre el formulario de la tarea 1. Se describen los pasos necesarios para cargar el formulario, se indican los valores válidos e inválidos para cada campo, y se verifica la accesibilidad del formulario utilizando el lector de pantalla NVDA, como tambien se realizara la descripcion de pasos para la validacion de estilos.
 
 ## Índice
 
@@ -86,9 +86,9 @@ Este documento detalla el proceso de pruebas manuales realizado sobre el formula
 - Los botones deben tener un fondo azul (`#007bff`) y cambiar a un tono más oscuro (`#0056b3`) al pasar el cursor.
 
 **Resultados Observados:**
-- [ ] El fondo del formulario es blanco y el texto negro.
-- [ ] Los bordes están correctamente redondeados.
-- [ ] Los botones muestran el color azul con el cambio de color esperado al pasar el cursor.
+- El fondo del formulario es blanco y el texto negro.
+- Los bordes están correctamente redondeados.
+- Los botones muestran el color azul con el cambio de color esperado al pasar el cursor.
 
 **Estilo de alto contraste** 
 
@@ -105,9 +105,9 @@ Este documento detalla el proceso de pruebas manuales realizado sobre el formula
 - Los botones deben cambiar a un fondo oscuro al hacer hover.
 
 **Resultados Observados:**
-- [ ] El fondo del formulario cambió a oscuro y el texto es blanco.
-- [ ] Los campos de entrada reflejan el cambio de estilo esperado.
-- [ ] Los botones cambian correctamente de color al pasar el cursor.
+- El fondo del formulario cambió a oscuro y el texto es blanco.
+- Los campos de entrada reflejan el cambio de estilo esperado.
+- Los botones cambian correctamente de color al pasar el cursor.
 
 **Modo Violeta**
 
@@ -124,9 +124,9 @@ Este documento detalla el proceso de pruebas manuales realizado sobre el formula
 - Los botones deben cambiar a un fondo violeta oscuro al hacer hover.
 
 **Resultados Observados:**
-- [ ] El fondo del formulario cambió a violeta y el texto es blanco.
-- [ ] Los campos de entrada reflejan el cambio de estilo esperado.
-- [ ] Los botones cambian correctamente de color al pasar el cursor.
+- El fondo del formulario cambió a violeta y el texto es blanco.
+- Los campos de entrada reflejan el cambio de estilo esperado.
+- Los botones cambian correctamente de color al pasar el cursor.
 
 ## Validación de Campos
 
