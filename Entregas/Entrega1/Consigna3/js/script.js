@@ -1,7 +1,7 @@
 // Función para cambiar el estilo del formulario y del fondo
 function setStyle(styleName) {
-    const formContainer = document.getElementById('form-container'); // Obtener el contenedor del formulario por su ID
-    const body = document.body; // Obtener el cuerpo del documento
+    const formContainer = document.getElementById('form-container');
+    const body = document.body;
 
     // Limpiar clases previas
     body.className = '';
@@ -26,15 +26,15 @@ function showError(message) {
 
 // Función para validar el formulario
 function validateForm(event) {
-    event.preventDefault(); // Prevenir el envío del formulario por defecto
+    event.preventDefault(); // Prevenir el envío del formulario por defecto (corrección)
     const form = document.getElementById('myForm');
 
-    const nombre = form['nombre'].value;
-    const apellido = form['apellido'].value;
-    const telefono = form['telefono'].value;
-    const email = form['email'].value;
-    const fechaNacimiento = form['fecha de nacimiento'].value;
-    const paisResidencia = form['pais de nacimiento'].value;
+    const nombre = form['nombre'].value.trim();
+    const apellido = form['apellido'].value.trim();
+    const telefono = form['telefono'].value.trim();
+    const email = form['email'].value.trim();
+    const fechaNacimiento = form['fecha de nacimiento'].value.trim();
+    const paisResidencia = form['pais de nacimiento'].value.trim();
 
     // Validación de campos vacíos
     if (!nombre || !apellido || !telefono || !email || !fechaNacimiento || !paisResidencia) {
@@ -56,8 +56,33 @@ function validateForm(event) {
         return false;
     }
 
-    form.submit(); // Enviar el formulario si todo es válido
+    form.submit(); // Envia el formulario si todo es válido
 }
 
-// Agregar evento de validación al formulario
+// Función para deshabilitar el botón de envío si hay campos vacíos
+function toggleSubmitButton() {
+    const form = document.getElementById('myForm');
+    const submitButton = form.querySelector('button[type="submit"]');
+    const inputs = form.querySelectorAll('input[required]');
+    
+    let allFilled = true;
+    
+    inputs.forEach(input => {
+        if (input.value.trim() === '') {
+            allFilled = false;
+        }
+    });
+
+    submitButton.disabled = !allFilled;
+}
+
+// Agrega evento de validación al formulario
 document.getElementById('myForm').addEventListener('submit', validateForm);
+
+// Agrega eventos de entrada para validar si los campos están llenos y habilitar/deshabilitar el botón de envío
+document.querySelectorAll('#myForm input[required]').forEach(input => {
+    input.addEventListener('input', toggleSubmitButton);
+});
+
+// Inicializa el estado del botón de envío al cargar la página
+toggleSubmitButton();
